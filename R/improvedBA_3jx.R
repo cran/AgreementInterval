@@ -101,9 +101,9 @@ ai<- function(x,y,lambda=1, alpha=0.05, clin.limit=NA)
     stop("Error: Please enter x and y as numeric vectors")
   if (length(x) != length(y) | length(x)<3)
     stop("Error: Please enter paired data between x and y with the same length (at least 3) ")
-  if (lambda<=0)
+  if (length(lambda)>1 | lambda<=0 | !is.numeric(lambda))
     stop("Error: Please enter reliability ratio between x and y as lambda, a positive value. (default 1)")
-  if (alpha<=0 | alpha>1)
+  if (length(alpha)>1 | alpha<=0 | alpha>1 | !is.numeric(alpha))
     stop("Error: Please enter discordance rate, a value between 0 and 1, default 0.05")
 
 

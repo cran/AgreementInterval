@@ -1,7 +1,7 @@
 Package: AgreementInterval
 Type: Package
 Title: Agreement Interval of Two Measurement Methods
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
   person("Jialin", "Xu", email="jxx120@gmail.com", role=c("aut", "cre")),
   person("Jason", "Liao", email="jason_liao@merck.com", role=c("aut"))
@@ -14,9 +14,9 @@ LazyData: true
 RoxygenNote: 6.1.0
 Suggests: testthat, MASS, Matrix, lme4
 NeedsCompilation: no
-Packaged: 2018-08-29 17:03:27 UTC; xujial
+Packaged: 2018-10-22 18:04:00 UTC; xujial
 Author: Jialin Xu [aut, cre],
   Jason Liao [aut]
 Maintainer: Jialin Xu <jxx120@gmail.com>
 Repository: CRAN
-Date/Publication: 2018-08-31 20:10:06 UTC
+Date/Publication: 2018-10-25 12:30:08 UTC

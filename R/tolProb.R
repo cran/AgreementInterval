@@ -22,9 +22,15 @@
 ## Function to calculate tolerance probability based on sample size (n) and number of paired data out of limit (k)
 
 tolProb=function(n, k, alpha=0.05){
+  if (length(n)!=1)
+    stop("Please enter n as one single integer value")
+  if (length(k)!=1)
+    stop("Please enter k as one single integer value")
   if (!is.numeric(n) | length(n)!=1 |
       !is.numeric(k) | length(k)!=1 | n<k)
-    stop("Please enter n and k as a integer with n>=k")
+    stop("Please enter n and k as integer and make sure n>=k")
+  if (length(alpha)!=1 | !is.numeric(alpha))
+    stop("Please enter a numeric value of alpha between 0 and 1, default 0.05")
  i=0:k
  x1=choose(n, i)
  x2=(1-alpha)^(n-i)
